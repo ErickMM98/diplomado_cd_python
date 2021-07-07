@@ -10,7 +10,7 @@ import numpy as np
 import os
 
 
-data = pd.read_csv("peliculas.csv")
+data = pd.read_csv("data//peliculas.csv")
 dataset = data.select_dtypes(np.number)
 
 objetivo = dataset['ventas']
@@ -34,4 +34,4 @@ dataset['Co_predict'] = modelo.predict(variables_independientes)
 
 from sklearn import metrics
 metrics.mean_absolute_error( y_true = dataset['ventas'], y_pred = dataset['Co_predict'])
-np.sqrt(metrics.mean_absolute_error( y_true = dataset['ventas'], y_pred = dataset['Co_predict']))
+print(np.sqrt(metrics.mean_absolute_error( y_true = dataset['ventas'], y_pred = dataset['Co_predict'])))
