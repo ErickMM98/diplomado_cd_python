@@ -10,5 +10,4 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 from sklearn import datasets
 
-boston = datasets.load_boston()
 
