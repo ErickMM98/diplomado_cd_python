@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['script2.py', 'script3.py']
+recent_files = ['script2.py', 'script3.py', 'script4.py']
 
