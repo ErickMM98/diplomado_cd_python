@@ -19,6 +19,7 @@ datos.head()
 from sklearn import preprocessing
 
 var_numericas_df = datos.select_dtypes([int, float])
+print(var_numericas_df)
 var_numericas_df["col_outliers"] = datos["col_outliers"]
 var_numericas_df.columns
 
