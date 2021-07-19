@@ -54,4 +54,6 @@ clasificador_knn = KNeighborsClassifier(n_neighbors=10,
 clasificador_knn.fit(X_train, y_train)
 
 preds = clasificador_knn.predict(X_test)
+#Un f1 bastante bajo xd ~0.38
 print(f1_score(y_test, preds, average="micro"))
+
